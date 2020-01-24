@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Sort/static/css/main.a460e538.chunk.css",
+    "main.js": "/React-Sort/static/js/main.44d6df76.chunk.js",
+    "main.js.map": "/React-Sort/static/js/main.44d6df76.chunk.js.map",
+    "runtime-main.js": "/React-Sort/static/js/runtime-main.a4227ca3.js",
+    "runtime-main.js.map": "/React-Sort/static/js/runtime-main.a4227ca3.js.map",
+    "static/js/2.97548b9e.chunk.js": "/React-Sort/static/js/2.97548b9e.chunk.js",
+    "static/js/2.97548b9e.chunk.js.map": "/React-Sort/static/js/2.97548b9e.chunk.js.map",
+    "index.html": "/React-Sort/index.html",
+    "precache-manifest.ae5d1ed350e77b7c7880ed1f978b7828.js": "/React-Sort/precache-manifest.ae5d1ed350e77b7c7880ed1f978b7828.js",
+    "service-worker.js": "/React-Sort/service-worker.js",
+    "static/css/main.a460e538.chunk.css.map": "/React-Sort/static/css/main.a460e538.chunk.css.map",
+    "static/js/2.97548b9e.chunk.js.LICENSE": "/React-Sort/static/js/2.97548b9e.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4227ca3.js",
+    "static/js/2.97548b9e.chunk.js",
+    "static/css/main.a460e538.chunk.css",
+    "static/js/main.44d6df76.chunk.js"
+  ]
+}
