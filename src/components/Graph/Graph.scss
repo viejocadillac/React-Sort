@@ -1,0 +1,21 @@
+.container {
+    background-color: darkslategrey;
+    display: flex;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 3em;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.columna {
+    background-color: rgb(253, 233, 143);
+    flex-grow: 1;
+  
+    &:hover{
+        background-color: tomato;
+    }
+  }
