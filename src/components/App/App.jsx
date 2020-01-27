@@ -9,12 +9,17 @@ const algoritmos = [
   {
     value: 'bubblesort',
     name: 'Bubble Sort',
-    component: <BubbleSort milis={20} maxValue={500} />,
+    component: <BubbleSort milis={20} maxValue={400} />,
+  },
+  {
+    value: 'bubblesort2',
+    name: 'Bubble Sort 2',
+    component: <BubbleSort milis={20} maxValue={400} />,
   },
 ];
 
 function App() {
-  const defaultAlgoritmo = algoritmos[0].value;
+  const defaultAlgoritmo = algoritmos[0];
   return (
     <div className="App">
       <ShowAlgorithm algoritmos={algoritmos} defAlgoritmo={defaultAlgoritmo} items={50} />

@@ -1,6 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled, { ThemeProvider } from 'styled-components';
+import { AnimatedButton, AnimatedButtonPrimary } from '../Buttons/Buttons';
 import './Controls.scss';
+
+const theme = {
+  primaryColor: 'Yellow',
+};
+
+const WrapperControls = styled.div`
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  margin-bottom: 3em;
+`;
 
 const Controls = ({
   randomize,
@@ -8,11 +21,16 @@ const Controls = ({
   stopSorting,
   isSorting,
 }) => (
-  <div className="controls">
-    <input type="button" disabled={isSorting} value="Randomize" onClick={randomize} />
-    <input type="button" disabled={isSorting} value="Sort" onClick={sort} />
-    <input type="button" disabled={!isSorting} value="Stop" onClick={stopSorting} />
-  </div>
+
+  <ThemeProvider theme={theme}>
+    <WrapperControls>
+      <AnimatedButtonPrimary disabled={isSorting} onClick={randomize}>Mezclar</AnimatedButtonPrimary>
+      <AnimatedButtonPrimary disabled={isSorting} onClick={sort}>Ordenar</AnimatedButtonPrimary>
+      <AnimatedButtonPrimary disabled={!isSorting} onClick={stopSorting}>Parar</AnimatedButtonPrimary>
+    </WrapperControls>
+  </ThemeProvider>
+
+
 );
 
 Controls.propTypes = {

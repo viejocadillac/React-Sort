@@ -60,7 +60,7 @@ const BubbleSort = ({ items, milis, maxValue }) => {
   };
 
   return (
-    <>
+    <div style={{height:'100%', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
       <Graph array={random} />
       <Controls
         randomize={randomize}
@@ -68,7 +68,7 @@ const BubbleSort = ({ items, milis, maxValue }) => {
         stopSorting={stopSorting}
         isSorting={isSorting}
       />
-    </>
+    </div>
   );
 };
 
