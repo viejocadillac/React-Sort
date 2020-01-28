@@ -11,11 +11,6 @@ const algoritmos = [
     name: 'Bubble Sort',
     component: <BubbleSort milis={20} maxValue={400} />,
   },
-  {
-    value: 'bubblesort2',
-    name: 'Bubble Sort 2',
-    component: <BubbleSort milis={20} maxValue={400} />,
-  },
 ];
 
 function App() {

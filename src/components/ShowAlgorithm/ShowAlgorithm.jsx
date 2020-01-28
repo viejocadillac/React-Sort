@@ -62,7 +62,7 @@ const ShowAlgorithm = ({ defAlgoritmo, algoritmos, items }) => {
   };
 
   return (
-    <div style={{height:'100vh'}}>
+    <div style={{ height: '100vh' }}>
 
       <Dropdown onMouseEnter={() => setShowDrop(true)} onMouseLeave={() => setShowDrop(false)}>
         <DropdownButton>{selectedAlgoritmo.name}</DropdownButton>
@@ -72,7 +72,7 @@ const ShowAlgorithm = ({ defAlgoritmo, algoritmos, items }) => {
               <DropdownOption
                 key={algoritmo.value}
                 value={algoritmo.value}
-                onClick={() => optionSelected(algoritmo) }
+                onClick={() => optionSelected(algoritmo)}
               >
                 {algoritmo.name}
               </DropdownOption>

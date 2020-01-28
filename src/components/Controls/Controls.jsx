@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
-import { AnimatedButton, AnimatedButtonPrimary } from '../Buttons/Buttons';
+import { ButtonPrimary } from '../Buttons/Buttons';
 import './Controls.scss';
 
 const theme = {
-  primaryColor: 'Yellow',
+  primaryColor: 'White',
 };
 
 const WrapperControls = styled.div`
+  margin: 0 auto;
   text-align: center;
   display:flex;
   justify-content: center;
@@ -24,13 +25,17 @@ const Controls = ({
 
   <ThemeProvider theme={theme}>
     <WrapperControls>
-      <AnimatedButtonPrimary disabled={isSorting} onClick={randomize}>Mezclar</AnimatedButtonPrimary>
-      <AnimatedButtonPrimary disabled={isSorting} onClick={sort}>Ordenar</AnimatedButtonPrimary>
-      <AnimatedButtonPrimary disabled={!isSorting} onClick={stopSorting}>Parar</AnimatedButtonPrimary>
+      <ButtonPrimary disabled={isSorting} onClick={randomize}>
+        Mezclar
+      </ButtonPrimary>
+      <ButtonPrimary disabled={isSorting} onClick={sort}>
+        Ordenar
+      </ButtonPrimary>
+      <ButtonPrimary disabled={!isSorting} onClick={stopSorting}>
+        Parar
+      </ButtonPrimary>
     </WrapperControls>
   </ThemeProvider>
-
-
 );
 
 Controls.propTypes = {
